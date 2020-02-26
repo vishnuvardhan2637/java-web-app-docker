@@ -112,6 +112,7 @@
 	</distributionManagement> -->
 	
 	<build>
+		<finalName>jav-web-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
