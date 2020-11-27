@@ -1,18 +1,18 @@
 node{
      
-    stage('SCM Git Checkout'){
-        git url: 'https://github.com/MithunTechnologiesDevOps/java-web-app-docker.git',branch: 'master'
+    stage('scm github checkout'){
+        git url: 'https://github.com/mithuntechnologiesdevops/java-web-app-docker.git',branch: 'master'
     }
     
-    stage(" Maven Clean Package"){
-      def mavenHome =  tool name: "Maven-3.5.6", type: "maven"
-      def mavenCMD = "${mavenHome}/bin/mvn"
-      sh "${mavenCMD} clean package"
+    stage(" maven clean package"){
+      def mavenhome =  tool name: "maven-3.5.6", type: "maven"
+      def mavencmd = "${mavenhome}/bin/mvn"
+      sh "${mavencmd} clean package"
       
     } 
     
     
-    stage('Build Docker Image'){
+    stage('build docker image'){
         sh 'docker build -t dockerhandson/java-web-app .'
     }
     
