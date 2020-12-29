@@ -103,7 +103,7 @@
 
 	</dependencies>
 	
-	<!-- <distributionManagement>
+	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
@@ -114,7 +114,7 @@
 	      <name>Vishnuvardhan2637 Snapshot Nexus Repository </name>
 	      <url>http://13.58.91.131:8081/repository/Vishnu-Snapshots/</url>
 	    </snapshotRepository>
-	</distributionManagement> -->
+	</distributionManagement>
 	
 	<build>
 		<finalName>java-web-app</finalName>
